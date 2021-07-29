@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Junior Developer Survey form</h1>
+        <h3 id="description">
+          Thank you for taking the time and helping us getting better
+        </h3>
+        <p></p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label>Name</label><br>
+          <input id="name" type="text" placeholder="Enter your name"/>
+        </div>
+        <div class="form-group">
+          <label>E-Mail</label><br>
+          <input id="email" type="email" placeholder="Enter your E-Mail"/>
+        </div>
+        <div class="form-group">
+          <label>Age</label><br>
+          <input id="number" type="number" min="18" max="120" placeholder="Age"/>
+        </div>        
+        <div class="form-group">
+          <p>What is your current occupation?</p><br>
+          <select id="dropdown">
+            <option>Student</option>
+            <option>In a job</option>
+            <option>Preparing for a new job</option>
+            <option>Retired</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Which role would you like to take on in the future?</p><br>
+          <input type="radio" name="radio-buttons" id="Front-End" value="Front-End">
+          <label for="Front-End">Front-End</label><br>
+          <input type="radio" name="radio-buttons" id="Back-End" value="Back-End">
+          <label for="Back-End">Back-End</label><br>
+          <input type="radio" name="radio-buttons" id="Full-Stack" value="Full-Stack">
+          <label for="Full-Stack">Full-Stack</label><br>
+        </div>
+        <div class="form-group">
+          <label>What brought you to coding?</label><br>
+          <select id="brought-coding">
+            <option>Friends</option>
+            <option>Family</option>
+            <option>Colleagues</option>
+            <option>YouTube</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What kind of medium do you prefer for learning?</p>
+          <input type="checkbox" id="video" name="prefer" value="" type="checkbox">
+          <label for >Video</label><br>
+          <input type="checkbox" id="audio" name="prefer" value="" type="checkbox">
+          <label for >Audio</label><br>
+          <input type="checkbox" id="book" name="prefer" value="" type="checkbox">
+          <label for >Book</label><br>
+          <input type="checkbox" id="other" name="prefer" value="" type="checkbox">
+          <label for >Other</label><br>
+        </div>
+        <div class="form-group">
+          <p>If you have any suggestions, please write them down here</p>
+            <textarea id="suggestions" class="input-area" name="suggestions" rows="10" cols="50" placeholder="Enter suggestions here..."></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
