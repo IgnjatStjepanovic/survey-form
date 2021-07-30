@@ -16,19 +16,20 @@
       <form id="survey-form">
         <div class="form-group">
           <label>Name</label><br>
-          <input id="name" type="text" placeholder="Enter your name"/>
+          <input id="name" type="text" placeholder="Enter your name" class="form-control"/>
         </div>
         <div class="form-group">
           <label>E-Mail</label><br>
-          <input id="email" type="email" placeholder="Enter your E-Mail"/>
+          <input id="email" type="email" placeholder="Enter your E-Mail" class="form-control"/>
         </div>
         <div class="form-group">
           <label>Age</label><br>
-          <input id="number" type="number" min="18" max="120" placeholder="Age"/>
+          <input id="number" type="number" min="18" max="120" placeholder="Age" class="form-control"/>
         </div>        
         <div class="form-group">
-          <p>What is your current occupation?</p><br>
-          <select id="dropdown">
+          <label>What is your current occupation?</label><br>
+          <select id="dropdown" class="form-control">
+            <option value="" disabled selected hidden>Please Choose...</option>
             <option>Student</option>
             <option>In a job</option>
             <option>Preparing for a new job</option>
@@ -37,7 +38,7 @@
           </select>
         </div>
         <div class="form-group">
-          <p>Which role would you like to take on in the future?</p><br>
+          <label>Which role would you like to take on in the future?</label><br>
           <input type="radio" name="radio-buttons" id="Front-End" value="Front-End">
           <label for="Front-End">Front-End</label><br>
           <input type="radio" name="radio-buttons" id="Back-End" value="Back-End">
@@ -47,7 +48,8 @@
         </div>
         <div class="form-group">
           <label>What brought you to coding?</label><br>
-          <select id="brought-coding">
+          <select id="brought-coding" class="form-control">
+            <option value="" disabled selected hidden>Please Choose...</option>
             <option>Friends</option>
             <option>Family</option>
             <option>Colleagues</option>
@@ -56,7 +58,7 @@
           </select>
         </div>
         <div class="form-group">
-          <p>What kind of medium do you prefer for learning?</p>
+          <label>What kind of medium do you prefer for learning?</label><br>
           <input type="checkbox" id="video" name="prefer" value="" type="checkbox">
           <label for >Video</label><br>
           <input type="checkbox" id="audio" name="prefer" value="" type="checkbox">
@@ -67,7 +69,7 @@
           <label for >Other</label><br>
         </div>
         <div class="form-group">
-          <p>If you have any suggestions, please write them down here</p>
+          <p>If you have any suggestions, please write them down here:</p>
             <textarea id="suggestions" class="input-area" name="suggestions" rows="10" cols="50" placeholder="Enter suggestions here..."></textarea>
         </div>
         <input type="submit" value="Submit">
